@@ -156,6 +156,52 @@ function simpleMerge(x, y, gamma)
 end 
 
 """
+Hierarchically merges clusters until 1 cluster remains
+"""
+
+function agglomerative_cluster(x,y)
+    n = length(y)
+    m = length(x[1,:])
+
+    #Initialize a empty vector of clusters
+    clusters = Vector{Cluster}([])
+    #Initialize all the point as clusters 
+    for dataId in 1:size(x, 1)
+        push!(clusters, Cluster(dataId,x,y))
+    end
+
+    #print("Initialisation : ", length(clusters), " clusters\t")
+
+    #While there is more than one cluster
+    while length(clusters) > 1
+        #Find the two closest clusters
+        #println(length(clusters), " clusters\t")
+        minDist = Inf
+        c1 = 0
+        c2 = 0
+        for i in 1:length(clusters)
+            for j in i+1:length(clusters)
+                dist = Distance(i,j,x).distance
+                if dist < minDist
+                    minDist = dist
+                    c1 = i
+                    c2 = j
+                end
+            end
+        end
+        #Merge the two closest clusters
+        merge!(clusters[c1],clusters[c2])
+        #Remove the second cluster
+        deleteat!(clusters,c2)
+        
+    end
+
+    return clusters
+
+end 
+
+"""
+
 Test si deux clusters peuvent être fusionnés tout en garantissant l'optimalité
 
 Entrées :
