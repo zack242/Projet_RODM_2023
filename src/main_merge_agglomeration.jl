@@ -45,14 +45,16 @@ function testMerge(X_train, Y_train, X_test, Y_test, D, classes; time_limit::Int
     # Pour tout pourcentage de regroupement considéré
     println("\t\t\tLinkage\t\t# clusters\tGap")
     for type in ["Single", "Average", "Complet"]
-        print("\t\t\t", type, "\t\t")
-        clusters = agglomerative_cluster(X_train, Y_train, type)
-        print(length(clusters), " clusters\t")
-        T, obj, resolution_time, gap = build_tree(clusters, D, classes, multivariate=isMultivariate, time_limit=time_limit)
-        print(round(gap, digits=1), "%\t")
-        print("Erreurs train/test : ", prediction_errors(T, X_train, Y_train, classes))
-        print("/", prediction_errors(T, X_test, Y_test, classes), "\t")
-        println(round(resolution_time, digits=1), "s")
+        for nbr_cluster in 1:10
+            print("\t\t\t", type, "\t\t")
+            clusters = agglomerative_cluster(X_train, Y_train, type,nbr_cluster)
+            print(length(clusters), " clusters\t")
+            T, obj, resolution_time, gap = build_tree(clusters, D, classes, multivariate=isMultivariate, time_limit=time_limit)
+            print(round(gap, digits=1), "%\t")
+            print("Erreurs train/test : ", prediction_errors(T, X_train, Y_train, classes))
+            print("/", prediction_errors(T, X_test, Y_test, classes), "\t")
+            println(round(resolution_time, digits=1), "s")
+        end
     end
     println()
 end

@@ -48,7 +48,7 @@ function testMerge(X_train, Y_train, X_test, Y_test, D, classes; time_limit::Int
 
     # Pour tout pourcentage de regroupement considéré
     println("\t\t\tbandwith\t# clusters\tGap")
-    for bandwidth in [0.5, 1.0, 1.5, 2.0]
+    for bandwidth in [0.5, 1.0, 1.5, 2.0,3]
         print("\t\t\t",bandwidth,"\t\t")
         clusters = meanShift(X_train, Y_train, bandwidth)
         print(length(clusters), " clusters\t")

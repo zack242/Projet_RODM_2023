@@ -115,14 +115,26 @@ function meanShift(X, y, bandwidth)
                 break
             end
             center = newCenter'
-        end
-
-        assigned = collect(setdiff(1:n, unassigned))
-        cluster.x = X[assigned, :]
+        end 
+        # Assign data points to nearest centroid
+        assigned = Int[]
+        remaining = collect(unassigned)
+        for i in remaining
+            if euclidean(X[i, :], center) < 0.5
+                # Add data point to cluster
+                push!(cluster.dataIds, i)
+                push!(assigned, i)
+            end
+        end  
+        
+        # Mark assigned data points as assigned
+        setdiff!(unassigned, assigned)
 
     end
     return clusters
 end
+
+
 
 """
 Algorithme de clustering DBSCAN
