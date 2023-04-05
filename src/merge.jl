@@ -15,8 +15,8 @@ Sorties :
 function exactMerge(x, y)
 
     n = length(y)
-    m = length(x[1,:])
-    
+    m = length(x[1, :])
+
     # Liste de tous les clusters obtenus
     # (les données non regroupées seront seules dans un cluster)
     clusters = Vector{Cluster}([])
@@ -45,8 +45,8 @@ function exactMerge(x, y)
     end
 
     # Trie des distances par ordre croissant
-    sort!(distances, by = v -> v.distance)
-    
+    sort!(distances, by=v -> v.distance)
+
     # Pour chaque distance
     for distance in distances
 
@@ -64,13 +64,13 @@ function exactMerge(x, y)
                 # Les fusionner
                 merge!(c1, c2)
                 for id in c2.dataIds
-                    clusterId[id]= cId1
+                    clusterId[id] = cId1
                 end
 
                 # Vider le second cluster
                 empty!(clusters[cId2].dataIds)
-            end 
-        end 
+            end
+        end
     end
 
     # Retourner tous les clusters non vides
@@ -91,11 +91,11 @@ Sorties :
 function simpleMerge(x, y, gamma)
 
     n = length(y)
-    m = length(x[1,:])
-    
+    m = length(x[1, :])
+
     # Liste de tous les clusters obtenus
     # (les données non regroupées seront seules dans un cluster)
-    clusters = Vector{Cluster}([])
+
 
     # Initialement, chaque donnée est dans un cluster
     for dataId in 1:size(x, 1)
@@ -121,7 +121,7 @@ function simpleMerge(x, y, gamma)
     end
 
     # Trie des distances par ordre croissant
-    sort!(distances, by = v -> v.distance)
+    sort!(distances, by=v -> v.distance)
 
     remainingClusters = n
     distanceId = 1
@@ -142,7 +142,7 @@ function simpleMerge(x, y, gamma)
             c2 = clusters[cId2]
             merge!(c1, c2)
             for id in c2.dataIds
-                clusterId[id]= cId1
+                clusterId[id] = cId1
             end
 
             # Vider le second cluster
@@ -150,16 +150,14 @@ function simpleMerge(x, y, gamma)
         end
         distanceId += 1
     end
-    
+
     # Retourner tous les clusters non vides
     return filter(x -> length(x.dataIds) > 0, clusters)
-end 
+end
 
 """
 Hierarchically merges clusters until 1 cluster remains
 """
-
-
 
 """
 
@@ -178,7 +176,7 @@ function canMerge(c1::Cluster, c2::Cluster, x::Matrix{Float64}, y::Vector{Int})
 
     # Calcul des bornes inférieures si c1 et c2 étaient fusionnés
     mergedLBounds = min.(c1.lBounds, c2.lBounds)
-    
+
     # Calcul des bornes supérieures si c1 et c2 étaient fusionnés
     mergedUBounds = max.(c1.uBounds, c2.uBounds)
 
@@ -194,10 +192,10 @@ function canMerge(c1::Cluster, c2::Cluster, x::Matrix{Float64}, y::Vector{Int})
         # Si la donnée n'est pas dans c1 ou c2 mais intersecte la fusion de c1 et c2 sur au moins une feature
         if !(id in c1.dataIds) && !(id in c2.dataIds) && isInABound(data, mergedLBounds, mergedUBounds)
             canMerge = false
-        end 
-        
+        end
+
         id += 1
-    end 
+    end
 
     return canMerge
 end
@@ -224,9 +222,9 @@ function isInABound(v::Vector{Float64}, lowerBounds::Vector{Float64}, upperBound
         # S'il y a intersection
         if v[featureId] >= lowerBounds[featureId] && v[featureId] <= upperBounds[featureId]
             isInBound = true
-        end 
+        end
         featureId += 1
-    end 
+    end
 
     return isInBound
 end
@@ -246,5 +244,5 @@ function merge!(c1::Cluster, c2::Cluster)
     append!(c1.dataIds, c2.dataIds)
     c1.x = vcat(c1.x, c2.x)
     c1.lBounds = min.(c1.lBounds, c2.lBounds)
-    c1.uBounds = max.(c1.uBounds, c2.uBounds)    
+    c1.uBounds = max.(c1.uBounds, c2.uBounds)
 end
