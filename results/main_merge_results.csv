@@ -1,0 +1,180 @@
+Dataset, Train Size, Test Size, Features Count, D, Method, Gamma, # Clusters, Gap, Error Train/Test, Time
+iris, 120, 30, 4, 2, Univarié, 0.0%, 3 clusters, 0.0%, 38/12, 0.0s
+iris, 120, 30, 4, 2, Univarié, 20.0%, 24 clusters, 0.0%, 5/1, 0.2s
+iris, 120, 30, 4, 2, Univarié, 40.0%, 48 clusters, 0.0%, 5/1, 0.3s
+iris, 120, 30, 4, 2, Univarié, 60.0%, 72 clusters, 0.0%, 5/1, 1.0s
+iris, 120, 30, 4, 2, Univarié, 80.0%, 96 clusters, 0.0%, 5/1, 2.6s
+iris, 120, 30, 4, 2, Univarié, 100.0%, 120 clusters, 0.0%, 5/1, 4.6s
+iris, 120, 30, 4, 2, Multivarié, 0.0%, 3 clusters, 0.0%, 38/12, 0.1s
+iris, 120, 30, 4, 2, Multivarié, 20.0%, 24 clusters, 0.0%, 1/0, 0.2s
+iris, 120, 30, 4, 2, Multivarié, 40.0%, 48 clusters, 0.0%, 1/3, 0.7s
+iris, 120, 30, 4, 2, Multivarié, 60.0%, 72 clusters, 0.0%, 1/3, 1.4s
+iris, 120, 30, 4, 2, Multivarié, 80.0%, 96 clusters, 0.0%, 1/3, 0.9s
+iris, 120, 30, 4, 2, Multivarié, 100.0%, 120 clusters, 0.0%, 1/3, 0.8s
+iris,120,30,4,3,Univarié,0.0%,3 clusters,0.0%,38/12,0.0s
+iris,120,30,4,3,Univarié,20.0%,24 clusters,0.0%,4/1,1.7s
+iris,120,30,4,3,Univarié,40.0%,48 clusters,0.0%,0/4,3.2s
+iris,120,30,4,3,Univarié,60.0%,72 clusters,0.0%,0/1,1.9s
+iris,120,30,4,3,Univarié,80.0%,96 clusters,0.0%,0/3,7.8s
+iris,120,30,4,3,Univarié,100.0%,120 clusters,0.8%,1/1,10.2s
+iris,120,30,4,3,Multivarié,0.0%,3 clusters,0.0%,38/12,0.3s
+iris,120,30,4,3,Multivarié,20.0%,24 clusters,0.0%,0/0,0.4s
+iris,120,30,4,3,Multivarié,40.0%,48 clusters,0.0%,0/1,1.4s
+iris,120,30,4,3,Multivarié,60.0%,72 clusters,0.0%,0/1,1.0s
+iris,120,30,4,3,Multivarié,80.0%,96 clusters,0.0%,0/4,1.3s
+iris,120,30,4,3,Multivarié,100.0%,120 clusters,0.0%,0/4,2.2s
+iris,120,30,4,4,Univarié,0.0%,3 clusters,0.0%,38/12,0.0s
+iris,120,30,4,4,Univarié,20.0%,24 clusters,0.0%,3/2,7.7s
+iris,120,30,4,4,Univarié,40.0%,48 clusters,0.0%,0/2,2.8s
+iris,120,30,4,4,Univarié,60.0%,72 clusters,0.0%,0/2,8.8s
+iris,120,30,4,4,Univarié,80.0%,96 clusters,1.7%,2/4,10.1s
+iris,120,30,4,4,Univarié,100.0%,120 clusters,2.6%,3/3,10.1s
+iris,120,30,4,4,Multivarié,0.0%,3 clusters,0.0%,38/12,1.1s
+iris,120,30,4,4,Multivarié,20.0%,24 clusters,0.0%,0/8,0.9s
+iris,120,30,4,4,Multivarié,40.0%,48 clusters,0.0%,0/0,2.0s
+iris,120,30,4,4,Multivarié,60.0%,72 clusters,0.0%,0/0,1.9s
+iris,120,30,4,4,Multivarié,80.0%,96 clusters,0.0%,0/1,1.8s
+iris,120,30,4,4,Multivarié,100.0%,120 clusters,0.8%,1/3,10.1s
+seeds, 168, 42, 6, 2, Univarié, 0.0%, 3 clusters, 0.0%, 53/17, 0.0s
+seeds, 168, 42, 6, 2, Univarié, 20.0%, 33 clusters, 0.0%, 22/6, 0.4s
+seeds, 168, 42, 6, 2, Univarié, 40.0%, 67 clusters, 0.0%, 14/3, 1.1s
+seeds, 168, 42, 6, 2, Univarié, 60.0%, 100 clusters, 0.0%, 10/3, 3.1s
+seeds, 168, 42, 6, 2, Univarié, 80.0%, 134 clusters, 6.0%, 12/2, 10.0s
+seeds, 168, 42, 6, 2, Univarié, 100.0%, 168 clusters, 7.7%, 12/3, 10.0s
+seeds, 168, 42, 6, 2, Multivarié, 0.0%, 3 clusters, 0.0%, 53/17, 0.2s
+seeds, 168, 42, 6, 2, Multivarié, 20.0%, 33 clusters, 0.0%, 1/1, 0.4s
+seeds, 168, 42, 6, 2, Multivarié, 40.0%, 67 clusters, 0.0%, 0/0, 0.6s
+seeds, 168, 42, 6, 2, Multivarié, 60.0%, 100 clusters, 0.0%, 0/1, 2.0s
+seeds, 168, 42, 6, 2, Multivarié, 80.0%, 134 clusters, 0.0%, 0/1, 1.9s
+seeds,168,42,6,3,Univarié,0.0%,3 clusters,0.0%,53/17,0.0s
+seeds,168,42,6,3,Univarié,20.0%,33 clusters,0.0%,30/11,6.0s
+seeds,168,42,6,3,Univarié,40.0%,67 clusters,7.0%,10/3,10.0s
+seeds,168,42,6,3,Univarié,60.0%,100 clusters,7.0%,10/3,10.1s
+seeds,168,42,6,3,Univarié,80.0%,134 clusters,8.4%,12/6,10.1s
+seeds,168,42,6,3,Univarié,100.0%,168 clusters,12.8%,19/4,10.1s
+seeds,168,42,6,3,Multivarié,0.0%,3 clusters,0.0%,53/17,0.4s
+seeds,168,42,6,3,Multivarié,20.0%,33 clusters,0.0%,0/0,1.2s
+seeds,168,42,6,3,Multivarié,40.0%,67 clusters,0.0%,0/0,3.8s
+seeds,168,42,6,3,Multivarié,60.0%,100 clusters,0.0%,0/2,4.0s
+seeds,168,42,6,3,Multivarié,80.0%,134 clusters,0.0%,0/1,2.7s
+seeds,168,42,6,3,Multivarié,100.0%,168 clusters,0.0%,0/2,5.8s
+seeds,168,42,6,4,Univarié,0.0%,3 clusters,0.0%,53/17,0.1s
+seeds,168,42,6,4,Univarié,20.0%,33 clusters,30.2%,16/2,10.0s
+seeds,168,42,6,4,Univarié,40.0%,67 clusters,7.7%,10/3,10.1s
+seeds,168,42,6,4,Univarié,60.0%,100 clusters,28.2%,26/6,10.2s
+seeds,168,42,6,4,Univarié,80.0%,134 clusters,36.6%,43/10,10.1s
+seeds,168,42,6,4,Univarié,100.0%,168 clusters,90.9%,53/17,10.1s
+seeds,168,42,6,4,Multivarié,0.0%,3 clusters,0.0%,53/17,1.3s
+seeds,168,42,6,4,Multivarié,20.0%,33 clusters,0.0%,0/4,2.7s
+seeds,168,42,6,4,Multivarié,40.0%,67 clusters,0.0%,0/2,6.7s
+seeds,168,42,6,4,Multivarié,60.0%,100 clusters,0.6%,1/6,10.2s
+seeds,168,42,6,4,Multivarié,80.0%,134 clusters,0.0%,0/2,8.1s
+seeds,168,42,6,4,Multivarié,100.0%,168 clusters,184.7%,109/31,10.2s
+wine,142,36,13,2,Univarié,0.0%,3 clusters,0.0%,56/15,0.0s
+wine,142,36,13,2,Univarié,20.0%,28 clusters,0.0%,8/4,0.5s
+wine,142,36,13,2,Univarié,40.0%,56 clusters,0.0%,7/3,0.6s
+wine,142,36,13,2,Univarié,60.0%,85 clusters,0.0%,5/2,3.6s
+wine,142,36,13,2,Univarié,80.0%,113 clusters,0.0%,5/2,8.5s
+wine,142,36,13,2,Univarié,100.0%,142 clusters,6.8%,9/3,10.0s
+wine,142,36,13,2,Multivarié,0.0%,3 clusters,0.0%,0/2,0.1s
+wine,142,36,13,2,Multivarié,20.0%,28 clusters,0.0%,0/1,0.4s
+wine,142,36,13,2,Multivarié,40.0%,56 clusters,0.0%,0/2,0.6s
+wine,142,36,13,2,Multivarié,60.0%,85 clusters,0.0%,0/1,0.5s
+wine,142,36,13,2,Multivarié,80.0%,113 clusters,0.0%,0/1,0.7s
+wine,142,36,13,2,Multivarié,100.0%,142 clusters,0.0%,0/1,0.7s
+wine,142,36,13,3,Univarié,0.0%,3 clusters,0.0%,56/15,0.0s
+wine,142,36,13,3,Univarié,20.0%,28 clusters,0.0%,0/2,1.9s
+wine,142,36,13,3,Univarié,40.0%,56 clusters,1.4%,1/3,10.0s
+wine,142,36,13,3,Univarié,60.0%,85 clusters,6.8%,4/4,10.1s
+wine,142,36,13,3,Univarié,80.0%,113 clusters,5.2%,3/6,10.1s
+wine,142,36,13,3,Univarié,100.0%,142 clusters,0.7%,1/1,10.1s
+wine,142,36,13,3,Multivarié,0.0%,3 clusters,0.0%,0/1,0.2s
+wine,142,36,13,3,Multivarié,20.0%,28 clusters,0.0%,0/2,1.4s
+wine,142,36,13,3,Multivarié,40.0%,56 clusters,0.0%,0/1,1.4s
+wine,142,36,13,3,Multivarié,60.0%,85 clusters,0.0%,0/2,1.6s
+wine,142,36,13,3,Multivarié,80.0%,113 clusters,0.0%,0/2,1.8s
+wine,142,36,13,3,Multivarié,100.0%,142 clusters,0.0%,0/1,1.6s
+wine,142,36,13,4,Univarié,0.0%,3 clusters,0.0%,56/16,0.1s
+wine,142,36,13,4,Univarié,20.0%,28 clusters,0.0%,2/2,5.3s
+wine,142,36,13,4,Univarié,40.0%,56 clusters,6.8%,1/2,10.0s
+wine,142,36,13,4,Univarié,60.0%,85 clusters,10.9%,13/3,10.1s
+wine,142,36,13,4,Univarié,80.0%,113 clusters,24.6%,21/10,10.1s
+wine,142,36,13,4,Univarié,100.0%,142 clusters,71.1%,21/9,10.2s
+wine,142,36,13,4,Multivarié,0.0%,3 clusters,0.0%,0/1,0.3s
+wine,142,36,13,4,Multivarié,20.0%,28 clusters,0.0%,0/1,3.1s
+wine,142,36,13,4,Multivarié,40.0%,56 clusters,0.0%,0/2,3.5s
+wine,142,36,13,4,Multivarié,60.0%,85 clusters,0.0%,0/2,7.7s
+wine,142,36,13,4,Multivarié,80.0%,113 clusters,0.0%,0/2,5.9s
+wine,142,36,13,4,Multivarié,100.0%,142 clusters,0.0%,0/2,5.5s
+diabetes,160,40,8,2,Univarié,0.0%,2 clusters,0.0%,59/15,0.0s
+diabetes,160,40,8,2,Univarié,20.0%,32 clusters,0.0%,39/10,0.6s
+diabetes,160,40,8,2,Univarié,40.0%,64 clusters,0.0%,35/12,4.1s
+diabetes,160,40,8,2,Univarié,60.0%,96 clusters,14.5%,35/12,10.1s
+diabetes,160,40,8,2,Univarié,80.0%,128 clusters,28.0%,35/11,10.0s
+diabetes,160,40,8,2,Univarié,100.0%,160 clusters,30.1%,37/12,10.0s
+diabetes,160,40,8,2,Multivarié,0.0%,2 clusters,0.0%,59/15,0.2s
+diabetes,160,40,8,2,Multivarié,20.0%,32 clusters,0.0%,27/12,2.4s
+diabetes,160,40,8,2,Multivarié,40.0%,64 clusters,13.5%,18/12,10.0s
+diabetes,160,40,8,2,Multivarié,60.0%,96 clusters,16.8%,22/10,10.0s
+diabetes,160,40,8,2,Multivarié,80.0%,128 clusters,16.8%,23/17,10.0s
+diabetes,160,40,8,2,Multivarié,100.0%,160 clusters,15.1%,21/14,10.0s
+diabetes,160,40,8,3,Univarié,0.0%,2 clusters,0.0%,59/15,0.0s
+diabetes,160,40,8,3,Univarié,20.0%,32 clusters,0.0%,35/11,5.9s
+diabetes,160,40,8,3,Univarié,40.0%,64 clusters,24.0%,31/14,10.0s
+diabetes,160,40,8,3,Univarié,60.0%,96 clusters,26.0%,32/13,10.0s
+diabetes,160,40,8,3,Univarié,80.0%,128 clusters,28.0%,35/10,10.0s
+diabetes,160,40,8,3,Univarié,100.0%,160 clusters,37.9%,44/17,10.1s
+diabetes,160,40,8,3,Multivarié,0.0%,2 clusters,0.0%,59/15,0.5s
+diabetes,160,40,8,3,Multivarié,20.0%,32 clusters,31.1%,27/15,10.0s
+diabetes,160,40,8,3,Multivarié,40.0%,64 clusters,18.5%,20/17,10.1s
+diabetes,160,40,8,3,Multivarié,60.0%,96 clusters,18.5%,20/16,10.1s
+diabetes,160,40,8,3,Multivarié,80.0%,128 clusters,18.5%,22/14,10.1s
+diabetes,160,40,8,3,Multivarié,100.0%,160 clusters,24.0%,31/11,10.1s
+diabetes,160,40,8,4,Univarié,0.0%,2 clusters,0.0%,59/15,0.0s
+diabetes,160,40,8,4,Univarié,20.0%,32 clusters,34.5%,35/11,10.1s
+diabetes,160,40,8,4,Univarié,40.0%,64 clusters,27.0%,31/14,10.1s
+diabetes,160,40,8,4,Univarié,60.0%,96 clusters,28.0%,35/13,10.1s
+diabetes,160,40,8,4,Univarié,80.0%,128 clusters,33.3%,36/12,10.1s
+diabetes,160,40,8,4,Univarié,100.0%,160 clusters,31.1%,38/12,10.1s
+diabetes,160,40,8,4,Multivarié,0.0%,2 clusters,0.0%,59/15,1.2s
+diabetes,160,40,8,4,Multivarié,20.0%,32 clusters,31.1%,24/16,10.1s
+diabetes,160,40,8,4,Multivarié,40.0%,64 clusters,10.3%,10/13,10.1s
+diabetes,160,40,8,4,Multivarié,60.0%,96 clusters,30.1%,36/12,10.2s
+diabetes,160,40,8,4,Multivarié,80.0%,128 clusters,30.1%,27/11,10.1s
+diabetes,160,40,8,4,Multivarié,100.0%,160 clusters,20.3%,27/13,10.2s
+ionosphere, 160, 40, 8, 2, Univarié, 0.0%, 2 clusters, 0.0%, 59/15, 0.0s
+ionosphere, 160, 40, 8, 2, Univarié, 20.0%, 32 clusters, 0.0%, 39/10, 0.6s
+ionosphere, 160, 40, 8, 2, Univarié, 40.0%, 64 clusters, 0.0%, 35/12, 4.1s
+ionosphere, 160, 40, 8, 2, Univarié, 60.0%, 96 clusters, 14.6%, 35/12, 10.0s
+ionosphere, 160, 40, 8, 2, Univarié, 80.0%, 128 clusters, 28.0%, 35/11, 10.0s
+ionosphere, 160, 40, 8, 2, Univarié, 100.0%, 160 clusters, 30.1%, 37/12, 10.0s
+ionosphere, 160, 40, 8, 2, Multivarié, 0.0%, 2 clusters, 0.0%, 59/15, 0.2s
+ionosphere, 160, 40, 8, 2, Multivarié, 20.0%, 32 clusters, 0.0%, 27/12, 2.4s
+ionosphere, 160, 40, 8, 2, Multivarié, 40.0%, 64 clusters, 13.5%, 18/12, 10.0s
+ionosphere, 160, 40, 8, 2, Multivarié, 60.0%, 96 clusters, 16.8%, 22/10, 10.0s
+ionosphere, 160, 40, 8, 2, Multivarié, 80.0%, 128 clusters, 16.8%, 23/17, 10.1s
+ionosphere, 160, 40, 8, 2, Multivarié, 100.0%, 160 clusters, 15.1%, 21/14, 10.0s
+ionosphere,160,40,8,3,Univarié,0.0%,2 clusters,0.0%,59/15,0.0s
+ionosphere,160,40,8,3,Univarié,20.0%,32 clusters,0.0%,35/11,5.8s
+ionosphere,160,40,8,3,Univarié,40.0%,64 clusters,23.2%,31/14,10.0s
+ionosphere,160,40,8,3,Univarié,60.0%,96 clusters,26.0%,32/13,10.0s
+ionosphere,160,40,8,3,Univarié,80.0%,128 clusters,28.0%,35/10,10.0s
+ionosphere,160,40,8,3,Univarié,100.0%,160 clusters,37.9%,44/17,10.1s
+ionosphere,160,40,8,3,Multivarié,0.0%,2 clusters,0.0%,59/15,0.5s
+ionosphere,160,40,8,3,Multivarié,20.0%,32 clusters,31.1%,27/15,10.0s
+ionosphere,160,40,8,3,Multivarié,40.0%,64 clusters,18.5%,20/17,10.1s
+ionosphere,160,40,8,3,Multivarié,60.0%,96 clusters,18.5%,20/16,10.2s
+ionosphere,160,40,8,3,Multivarié,80.0%,128 clusters,18.5%,22/14,10.1s
+ionosphere,160,40,8,3,Multivarié,100.0%,160 clusters,24.0%,31/11,10.1s
+ionosphere,160,40,8,4,Univarié,0.0%,2 clusters,0.0%,59/15,0.0s
+ionosphere,160,40,8,4,Univarié,20.0%,32 clusters,37.3%,35/11,10.0s
+ionosphere,160,40,8,4,Univarié,40.0%,64 clusters,27.0%,31/14,10.1s
+ionosphere,160,40,8,4,Univarié,60.0%,96 clusters,28.0%,35/15,10.1s
+ionosphere,160,40,8,4,Univarié,80.0%,128 clusters,37.9%,33/12,10.1s
+ionosphere,160,40,8,4,Univarié,100.0%,160 clusters,44.1%,49/16,10.2s
+ionosphere,160,40,8,4,Multivarié,0.0%,2 clusters,0.0%,59/15,1.2s
+ionosphere,160,40,8,4,Multivarié,20.0%,32 clusters,31.1%,24/16,10.1s
+ionosphere,160,40,8,4,Multivarié,40.0%,64 clusters,10.3%,10/13,10.1s
+ionosphere,160,40,8,4,Multivarié,60.0%,96 clusters,30.1%,36/12,10.1s
+ionosphere,160,40,8,4,Multivarié,80.0%,128 clusters,30.1%,27/11,10.2s
+ionosphere,160,40,8,4,Multivarié,100.0%,160 clusters,20.3%,27/13,10.1s
